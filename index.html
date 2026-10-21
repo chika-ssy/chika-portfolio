@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ポートフォリオ</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="about" class="section">
+        <div class="container">
+            <img class=osan_img src="image/Osanshouo.png" alt="オオサンショウウオのイラスト">
+            <h1>About Me</h1>
+            <p>香川高等専門学校を卒業後、地元のクラフトビール店でペアリングの奥深さを追求する。<br>
+                学生時代にはデザインを独学で学び、制作活動に熱中。<br>
+                これまでの経験を活かしたものづくりができるのではとWebデザインを学び始めたところ、
+                本格的にエンジニア業界に興味を持ち、職業訓練校へ通うことを決めて現在に至る。<br>
+                サンショウウオをこよなく愛している。</p>
+        </div>
+    </section>
+    <section id="projects" class="section">
+        <div class="container">
+            <h1>Projects</h1>
+            <div class="grid">
+                <div class="card">
+                    <h2>麦酒遍路</h2>
+                    <p>四国のクラフトビールスポットを巡る「Webチェックイン型お遍路システム」
+                        <a href="https://beer-ohenro.vercel.app/">麦酒遍路へ</a>
+                    </p>
+                </div>
+                <div class="card">
+                    <h2>推しサンショウウオ診断</h2>
+                    <p>簡単な12の質問に答えるだけ！<br>
+                        あなたの性格にピッタリの「推しサンショウウオ」を16種類の中から診断！<br>
+                    <a href="https://osh-isan-diagnosis.vercel.app/">推しサンショウウオ診断へ</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contact" class="section">
+        <div class="container">
+            <h1>Contact</h1>
+            <form action="send_email.php" method="POST">
+                <input type="text" name="name" placeholder="Name" required>
+                <input type="email" name="email" placeholder="Email" required>
+                <textarea name="message" placeholder="Message" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2024 Chika Yoshii</p>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
